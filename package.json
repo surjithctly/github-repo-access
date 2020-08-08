@@ -1,0 +1,23 @@
+{
+  "name": "github-access",
+  "version": "1.0.0",
+  "description": "Access Our Github Repo",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "tailwind build src/main.css -o style.css",
+    "build:postcss": "postcss src/main.css -o style.css",
+    "watch:css": "postcss src/main.css -o style.css --watch"
+  },
+  "author": "@surjithctly",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^3.1.2",
+    "autoprefixer": "^9.8.6",
+    "envato": "^2.4.1",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

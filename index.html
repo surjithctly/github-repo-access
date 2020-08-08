@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-gray-200">
+
+
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+
+
+
+        <div class="flex flex-col max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden md:flex-row">
+            <div class="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700">
+                <div class="py-6 px-6 md:px-8 md:py-0 text-center md:text-left">
+                    <img src="./src/img/logo-white.png" alt="Surjithctly Logo" class="w-32 mb-5 hidden md:block">
+                    <img src="./src/img/logo-dark.png" alt="Surjithctly Logo" class="w-32 mb-5 inline md:hidden">
+                    <h2 class="text-gray-700 text-lg font-bold md:text-gray-100">Request For <span
+                            class="text-blue-600 md:text-indigo-300">Github</span> Access</h2>
+
+                    <p class="mt-2 text-gray-600 text-sm md:text-gray-400">Access our Website Templates Private Github
+                        Repo to see live developments, track bugs & issues and other contribute to the developement.</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
+
+
+                <form class="w-full py-10 px-8 needs-validation" action="" method="POST" id="git_form" novalidate>
+                    <div class="mt-4">
+                        <div class="flex justify-between">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Envato Item
+                                Purchase Code</label>
+                            <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code"
+                                target="_blank" class="text-xs text-gray-500 hover:underline">What is this?</a>
+                        </div>
+                        <input id="purchase_code"
+                            class="bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full appearance-none focus:outline-none focus:bg-white"
+                            type="text" name="purchase_code" value="2638e479-70be-4e05-a1de-aca8c1dac8ba" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid purchase code.
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="flex justify-between">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Github
+                                Username</label>
+                        </div>
+
+                        <input id="username"
+                            class="bg-gray-200 text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full appearance-none focus:outline-none focus:bg-white"
+                            type="text" name="username" required>
+                        <div class="invalid-feedback">
+                            Please provide your github username.
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="inline-flex bg-indigo-700 text-white font-bold py-3 px-4 w-full rounded hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+                            <svg class="animate-spin hidden -ml-1 mr-3 h-5 w-5 text-indigo-400"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                    stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor"
+                                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                </path>
+                            </svg> Add Me to Github
+                        </button>
+                    </div>
+                    <div class="mt-4">
+
+                        <div class="hidden" role="alert" id="result">
+
+                        </div>
+
+
+                    </div>
+                </form>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

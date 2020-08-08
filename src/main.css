@@ -1,0 +1,44 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.custom {
+    background-color: antiquewhite;
+    color: aqua;
+}
+
+
+.was-validated input:invalid {
+    @apply border border-red-500 bg-white;
+}
+
+.invalid-feedback {
+    @apply hidden;
+}
+
+.is-invalid~.invalid-feedback,
+.was-validated :invalid~.invalid-feedback {
+    @apply block text-red-500 text-sm mt-2;
+}
+
+.loading {
+    @apply text-center p-4;
+}
+
+.alert {
+    @apply border-l-4 p-4;
+}
+
+.alert-warning {
+    @apply bg-orange-100 border-orange-500 text-orange-600;
+}
+
+.alert-error {
+    @apply bg-red-100 border-red-500 text-red-600;
+}
+
+.alert-success {
+    @apply bg-green-100 border-green-500 text-green-600;
+}
