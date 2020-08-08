@@ -2,6 +2,8 @@
 
 Automatically Invite Collaborators to your Github Repo using Github API based on Envato Market Themeforest Purchases.
 
+![image](https://user-images.githubusercontent.com/1884712/89714611-93cdb600-d9bd-11ea-9c68-0f7fcc456cdc.png)
+
 # Installation
 
 ```bash
