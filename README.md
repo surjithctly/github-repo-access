@@ -15,7 +15,19 @@ npm install
 Add a `.env` file in your root folder and then add your github token.
 
 ```
+ENVATO_TOKEN=YOUR_ENVATO_PEROSNAL_TOKEN
 GITHUB_TOKEN=YOUR_GITHUB_PEROSNAL_TOKEN
+```
+
+## Update Repo Map
+
+Map your github repo name with Envato Item ID
+
+```js
+module.exports = {
+  12345678: "repo-one",
+  87654321: "repo-two",
+};
 ```
 
 ## Use Vercel for easy deployment
