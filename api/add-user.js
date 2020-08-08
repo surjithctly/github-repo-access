@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/core");
-const repomap = require("./repomap.js");
 const Envato = require("envato");
+const repomap = require("./repomap.js");
 const github_token = process.env.GITHUB_TOKEN;
 const envato_token = process.env.ENVATO_TOKEN;
 const octokit = new Octokit({ auth: github_token });
@@ -55,6 +55,7 @@ async function addUSerToRepo(req, res) {
         .send({ status: 400, message: "Cannot validate your Purchase" });
     }
   } catch (error) {
+    console.log("token: ", envato_token);
     console.log("envato fetch error:", error);
     res
       .status(400)

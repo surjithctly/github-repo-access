@@ -1,8 +1,12 @@
 {
-  "name": "github-access",
+  "name": "github-repo-access",
   "version": "1.0.0",
   "description": "Access Our Github Repo",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surjithctly/github-repo-access"
+  },
   "scripts": {
     "build:css": "tailwind build src/main.css -o style.css",
     "build:postcss": "postcss src/main.css -o style.css",
