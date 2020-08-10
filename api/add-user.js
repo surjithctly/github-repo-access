@@ -55,8 +55,6 @@ async function addUSerToRepo(req, res) {
         .send({ status: 400, message: "Cannot validate your Purchase" });
     }
   } catch (error) {
-    console.log("token: ", envato_token);
-    console.log("token: ", github_token);
     console.log("envato fetch error:", error);
     res
       .status(400)
