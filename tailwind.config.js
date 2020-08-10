@@ -1,9 +1,9 @@
 module.exports = {
-  // purge: {
-  //   enabled: false,
-  //   content: ["./*.html"],
-  // },
-  purge: {},
+  purge: {
+    enabled: true,
+    content: ["./*.html", "./*.js"],
+  },
+  //purge: {},
   theme: {
     extend: {
       animation: {
