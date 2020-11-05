@@ -19,6 +19,15 @@ ENVATO_TOKEN=YOUR_ENVATO_PEROSNAL_TOKEN
 GITHUB_TOKEN=YOUR_GITHUB_PEROSNAL_TOKEN
 ```
 
+## Personal Token Scope
+
+The following scope is required to make it work.
+
+**Envato Token** : Verify purchases of your items
+
+**Github Token** : Private Repo
+
+
 ## Update Repo Map
 
 Map your github repo name with Envato Item ID
